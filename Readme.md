@@ -1,6 +1,6 @@
 # Phase_4_Client_Server_Communication_1_Activity
 
-1. Create a new rails api called concert venues
+1. Create a new rails api called concert_venues
 2. Generate resources for Show and Ticket. 
 A Show may have many tickets but a ticket will belong to a single show.   
 ```
