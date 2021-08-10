@@ -1,6 +1,18 @@
 # Phase_4_Client_Server_Communication_1_Activity
 
-1. Create a new rails api called concert_venues
+1. Create a new rails api called concert_venues and configure CORS. In your Gemfile uncomment gem 'rack-cors' and bundle. In config/initializers/cors.rb uncomment and add `*` to origins
+```
+Rails.application.config.middleware.insert_before 0, Rack::Cors do
+  allow do
+    origins '*'
+
+    resource '*',
+      headers: :any,
+      methods: [:get, :post, :put, :patch, :delete, :options, :head]
+  end
+end
+
+```
 2. Generate resources for Show and Ticket. 
 A Show may have many tickets but a ticket will belong to a single show.   
 ```
