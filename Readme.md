@@ -21,7 +21,9 @@ willcall : boolean
 
 3. Migrate
 
-4. Add these seeds to seeds.rb and create your seeds
+4. Add your relationships in the show and ticket models
+
+5. Add these seeds to seeds.rb and create your seeds
 ```
 Show.create(date:DateTime.strptime("08/01/2021 16:00", "%m/%d/%Y %H:%M"),artist:'skrillex', all_ages:true)
 
@@ -32,8 +34,8 @@ Show.create(date:DateTime.strptime("08/21/2021 16:00", "%m/%d/%Y %H:%M"),artist:
 
 ```
 
-5. In route.rb limit your routes to include only the index
+6. In route.rb limit your routes to include only the index
 
-6. In the shows controller create an index action that will render all of the shows. 
+7. In the shows controller create an index action that will render all of the shows. 
 
-7. run the server and go to `http://localhost:3000/shows` to confirm your data
+8. run the server and go to `http://localhost:3000/shows` to confirm your data
